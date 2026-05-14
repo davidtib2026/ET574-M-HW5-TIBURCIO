@@ -10,8 +10,14 @@ def show_chart(player):
 
     labels = ["Points", "Rebounds", "Assists"]
 
-    plt.bar(labels, stats)
+    colors = ["gold", "green", "blue"]
+
+    plt.bar(labels, stats, color=colors)
 
     plt.title(player["Player"] + " Stats")
+
+    plt.xlabel("Stat Categories")
+
+    plt.ylabel("Stat Numbers")
 
     plt.show()
